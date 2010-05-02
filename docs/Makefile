@@ -87,3 +87,6 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+upload:
+	scp -P 2001 -r _build/html/* forge@forge.2metz.fr:docs/django-account-manager
