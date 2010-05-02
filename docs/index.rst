@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-Experimental implementation of `Account Management and Session Identification <https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager/Spec/Latest#Contents_of_the_Account_Management_Control_Document>`_ by Mozilla Labs.
+Experimental implementation of `Account Management and Session Identification <https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager/Spec/Latest
 
 
 Install
