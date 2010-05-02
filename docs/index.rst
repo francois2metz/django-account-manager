@@ -28,14 +28,22 @@ In your ``settings.py``::
             ...,
             'django.contrib.sites',
             'django.contrib.auth',
-            'account_manager'
+            'account_manager',
         )
 
         MIDDLEWARE_CLASSES = (
             ...,
             'account_manager.middleware.AccountManagerMiddleware',
         )
-   
+
+In you ``urls.py``::
+
+        urlpatterns = patterns('',
+            ...,
+            (r'amcd/', include('account_manager.urls')),
+            ...
+        )
+
    
 
 Indices and tables
