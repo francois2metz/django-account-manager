@@ -11,6 +11,8 @@ class AccountManagerMiddleware:
             response['X-Account-Management'] = url
             if request.user.is_authenticated():
                 response['X-Account-Management-Status'] = 'active; name="%s"' % (request.user.username)
+            else:
+                response['X-Account-Management-Status'] = 'none'
         except:
             pass
         return response
