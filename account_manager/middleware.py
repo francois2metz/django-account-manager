@@ -12,7 +12,7 @@ class AccountManagerMiddleware:
             if request.user.is_authenticated():
                 response['X-Account-Management-Status'] = 'active; name="%s"' % (request.user.username)
             else:
-                response['X-Account-Management-Status'] = 'none'
+                response['X-Account-Management-Status'] = 'none; token="%s"' % request.META["CSRF_COOKIE"]
         except:
             pass
         return response

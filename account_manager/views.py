@@ -13,7 +13,8 @@ def control_document(request):
                     "path": reverse('signin'),
                     "params": {
                         "username":"username",
-                        "password":"password"
+                        "password":"password",
+                        "token" : 'csrfmiddlewaretoken',
                         }
                     },
                 "disconnect": {
