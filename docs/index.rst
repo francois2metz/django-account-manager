@@ -37,7 +37,6 @@ In your ``settings.py``::
 
         INSTALLED_APPS = (
             ...,
-            'django.contrib.sites',
             'django.contrib.auth',
             'account_manager',
         )
