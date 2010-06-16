@@ -9,7 +9,7 @@ Django Account Manager's documentation!
 .. toctree::
    :maxdepth: 2
 
-Experimental implementation of `Account Management and Session Identification <https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager/Spec/Latest>`_ by Mozilla Labs in `Django <http://www.djangoproject.com/>`_.
+Experimental implementation of `Account Management and Session Identification <https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager>`_ by Mozilla Labs in `Django <http://www.djangoproject.com/>`_.
 
 Features
 --------
@@ -51,8 +51,8 @@ In your ``urls.py``::
         urlpatterns = patterns('',
             ...,
             (r'amcd/', include('account_manager.urls')),
-            (r'xxx/signin/', 'your.view', name='signin'),   # Needed
-            (r'xxx/signout/', 'your.view', name='signout'), # Needed
+            url(r'xxx/signin/', 'your.view', name='signin'),   # Needed
+            url(r'xxx/signout/', 'your.view', name='signout'), # Needed
             ...
         )
 

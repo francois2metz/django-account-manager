@@ -2,7 +2,7 @@
 Django Account Manager
 ======================
 
-Experimental implementation of Account Management and Session Identification (see https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager/Spec/Latest
+Experimental implementation of Account Management and Session Identification (see https://wiki.mozilla.org/Labs/Weave/Identity/Account_Manager
 
 Documentation
 =============
