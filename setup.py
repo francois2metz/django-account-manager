@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
 setup(
@@ -6,7 +7,7 @@ setup(
     description='Experimental implementation of Account Management and Session Identification of Mozilla Labs',
     long_description=open('README.rst').read(),
 
-    author='Francois de Metz',
+    author='François de Metz',
     author_email='francois@2metz.fr',
     url='http://forge.2metz.fr/p/django-account-manager/',
 
