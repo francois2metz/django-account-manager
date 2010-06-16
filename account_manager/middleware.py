@@ -6,7 +6,8 @@ class AccountManagerMiddleware:
     def process_response(self, request, response):
         try:
             url = "%s://%s%s" % (request.META['wsgi.url_scheme'], request.META['HTTP_HOST'], reverse('amcd'))
-            response['X-Account-Management'] = url
+            link = "<%s>; rel=\"acct-mgmt\"" % url
+            response['Link'] = link
             if request.user.is_authenticated():
                 response['X-Account-Management-Status'] = 'active; name="%s"' % (request.user.username)
             else:
