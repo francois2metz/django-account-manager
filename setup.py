@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-account-manager',
-    version='0.0.2',
+    version='0.0.3',
     description='Experimental implementation of Account Management and Session Identification of Mozilla Labs',
     long_description=open('README.rst').read(),
 
